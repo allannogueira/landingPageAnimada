@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+ 
+<html lang="es">
+ 
+<head>
+<title>DIR-890L</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="utf-8" />
+<link rel="stylesheet" href="css/estilo.css" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bxslider.js"></script>
+<script src="js/jquery.zoom.js"></script>
+<script src="js/tabs.js"></script>
+
+<script>
+  $(document).ready(function(){
+  $('#ex1').zoom();
+  $('#ex2').zoom();
+  $('#ex3').zoom(); 
+  $('#ex4').zoom();  
+  $('#ex5').zoom();    
+  $('#ex6').zoom({ on:'toggle' });
+  });
+</script>
+
+<style>
+/* styles unrelated to zoom */
+
+
+/* these styles are for the demo, but are not required for the plugin */
+.zoom {
+display:inline-block;
+position: relative;
+}
+
+/* magnifying glass icon */
+.zoom:after {
+content:'';
+display:block; 
+width:33px; 
+height:33px; 
+position:absolute; 
+top:0;
+right:0;
+background:url(icon.png);
+}
+
+.zoom img {
+display: block;
+}
+
+.zoom img::selection { background-color: transparent; }
+
+#ex2 img:hover { cursor: url(grab.cur), default; }
+#ex2 img:active { cursor: url(grabbed.cur), default; }
+</style>
+
+</head>
+ 
+<body>
+<div class="contenedor">
+  <div class="logo">
+    <img src="img/logo_producto.png" alt="">
+  </div>
+
+ <div class="galeria-zoom">
+   
+    <script type="text/javascript">
+      $(document).ready(function(){
+        
+    $('.bxslider').bxSlider({
+      pagerCustom: '#bx-pager'
+    });
+      });
+    </script>
+
+    <div class="slider">
+    
+    <div style="max-width: 100%;" class="bx-wrapper">
+      <div class="bx-viewport">
+         
+        <ul class="bxslider">
+          <li><span class='zoom' id='ex1'><img src="img/slider1.jpg" width="100%" max-width="800" height="100%" min-height="368"></span></li>
+          <li><span class='zoom' id='ex2'><img src="img/slider2.jpg" width="100%" max-width="800" height="100%" min-height="368"></span></li>
+          <li><span class='zoom' id='ex3'><img src="img/slider3.jpg" width="100%" max-width="800" height="100%" min-height="368"></span></li>
+          <li><span class='zoom' id='ex4'><img src="img/slider4.jpg" width="100%" max-width="800" height="100%" min-height="368"></span></li>
+          <li><span class='zoom' id='ex5'><img src="img/slider5.jpg" width="100%" max-width="800" height="100%" min-height="368"></span></li>
+
+                               
+        </ul>   
+
+    </div>
+
+    </div>
+
+    <div id="bx-pager">
+      <a class="active" data-slide-index="0" href=""><img src="img/slider1t.jpg"></a>
+      <a class="" data-slide-index="1" href=""><img src="img/slider2t.jpg"></a>
+      <a class="" data-slide-index="2" href=""><img src="img/slider3t.jpg"></a>
+      <a class="" data-slide-index="3" href=""><img src="img/slider4t.jpg"></a>
+      <a class="" data-slide-index="4" href=""><img src="img/slider5t.jpg"></a>
+
+     
+          
+    </div>
+
+    </div> 
+
+ </div>
+
+ <div class="tabs-info">
+        <div class="tabs">
+          <ul class="tab-links">
+              <li class="active"><a href="#tab1"><i><img style="padding-right: 5px; vertical-align: middle; margin-top: -4px;" src="img/desc.png" alt=""></i>Descrição</a></li>
+              <li><a href="#tab2"><i><img style="padding-right: 5px; vertical-align: middle; margin-top: -4px;"  src="img/especificacion.png" alt=""></i>Especificação</a></li>
+              <li><a href="#tab3"><i><img style="padding-right: 5px; vertical-align: middle; margin-top: -4px;"  src="img/donw.png" alt=""></i>Downloads</a></li>
+              <li><a href="#tab4"><i><img style="padding-right: 5px; vertical-align: middle; margin-top: -4px;"  src="img/video.png" alt=""></i>Videos</a></li>
+              
+          </ul>
+ 
+    <div class="tab-content">
+        <div id="tab1" class="tab active">
+          <div class="layout1">
+            <div class="video_router">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ZSBl3OyCwJw?rel=0" frameborder="0" allowfullscreen></iframe>
+            </div>
+           </div> 
+
+           <div class="layout2">
+
+            <h1 class="titulo_layout3">Velocidade muio rápida para streaming em HD e jogos online</h1>
+           
+            
+              <p class="texto_layout" style="padding-bottom:40px; color:#fff;">Smartphone, notebooks, tablets, Smart TVs, videogames e muito mais - tudo conectado ao mesmo tempo. Foi por isso que criamos o novo Roteador Wi-Fi ULTRA AC 3200Mbps. Com tecnologias innovadoras como Smart-Connect, Tri-Band, Advanced Beamforming e velocidades de até 3,2 Gbps na rede Wi-Fi, ele proporciona um ultra-desempenho inigualável para uma experiência de conexão Wireless sem limites</p>
+          
+
+          
+           
+           </div>
+
+           <div class="layout3">
+           <h1 style="color:#313131" class="titulo_layout3">Por que ter um Roteador ULTRA Wi-Fi?</h1>
+            <div class="ultra_cont">
+              <div class="ultra">
+                <img src="img/ultra1.jpg" alt="">
+                <img src="img/ultra2.jpg" alt="">
+
+              </div>
+              <div class="ultra">
+                <img src="img/ultra3.jpg" alt="">
+                <img src="img/ultra4.jpg" alt="">
+
+              </div>
+              <div class="ultra">
+                <img src="img/ultra5.jpg" alt="">
+                <img src="img/ultra6.jpg" alt="">
+
+              </div>
+              
+            </div>
+
+           </div>
+
+           <div class="layout4">
+            
+              <h1 class="titulo_layout">Tri Band Wi-Fi</h1>
+           
+            
+              <p class="texto_layout" style="padding-bottom:40px;">É como ter três roteadores wireless em um só. Ele conta com banda wireless de 2,4 GHz, oferecendo velocidades de até 600 Mbps, e duas bandas wireless de 5 GHz, que proporcionam velocidades de até 1.300 Mbps cada, trabalhando todas ao mesmo tempo. Isso se traduz em jogos online que não travam, streaming de conteúdo em 4K, compartilhamento de arquivos sem limites, downloads com performance ultra-rápida, atividades em redes sociais com compartilhamentos de fotos e vídeos, e muito mais.</p>
+          
+
+            <img id="fade-it" class="router_triband" src="img/router_triband.jpg" alt="">
+
+             
+           </div>
+
+           <div class="layout5">
+            <h1 class="titulo_layout">SmartConnect</h1>
+           
+            
+              <p class="texto_layout" style="padding-bottom:60px;">Nem todas as bandas Wi-Fi são iguais, mas não é necessário se preocupar com isso. Com a tecnologia SmartConnect, o Roteador Wi-Fi ULTRA escolhe qual das três bandas Wi-Fi usar, e conecta automaticamente cada dispositivo da rede na melhor e mais rápida banda disponível, proporcionando SEMPRE a melhor conexão.</p>
+              
+             <img id="fade-itx" class="router_smartconect" src="img/router_smartconect.jpg" alt="">
+             
+           </div>
+
+           <div class="layout6">
+            <h1 class="titulo_layout" style="width:300px;">Smart AC Beamforming</h1>
+           
+            
+              <p class="texto_layout" style="padding-bottom:60px;">Melhora a cobertura Wi-Fi significativamente, direcionando a potência dos rádios para os seus dispositivos conforme eles estiverem circulando pelo ambiente, como tablets e smartphones. Você pode assistir vídeos em HD por streaming, falar com seus amigos pelo Skype e jogar online em qualquer lugar, tendo sempre a melhor experiência Wi-Fi.
+
+             
+             <img id="scale-it"class="router_smartac" src="img/router_smartac.jpg" alt="">
+           </div>
+
+           <div class="layout7">
+             <h1 class="titulo_layout" style="max-width:400px; width:100%;">Gerenciar a rede ficou mais fácil</h1>
+           
+            
+              <p class="texto_layout" style="padding-bottom:60px;">Gerenciar a sua rede habilitando controles de conteúdo, bloqueando dispositivos indesejados, monitorando a atividade na Internet e criando redes de convidados ficou mais fácil que nunca com a nova interface de configuração D-Link.</p>
+             <img id="scale-itxdos" class="pc" src="img/pc.png" alt="">
+           </div>
+           <div class="layout8">
+            <div class="cont_layout8">
+             <h1 class="titulo_layout2">Largura de banda mais inteligente</h1>
+           
+            
+              <p class="texto_layout2">A priorização inteligente de tráfego de Internet seleciona a rede Wi-Fi mais rápida para cada dispositivo e impede que os dispositivos mais antigos afetem o desempenho total do roteador.</p>
+            </div>
+             <img id="fly-itx" class="router_largura_de_banda" src="img/router_largura-de-banda.jpg" alt="">
+           </div>
+            
+          <div class="layout9">
+            <h1 class="titulo_layout" style="max-width:420px; width:100%;">Mais antenas para mais cobertura</h1>
+           
+            
+              <p class="texto_layout" style="padding-bottom:60px;">Seis (6) antenas externas de alto desempenho mantêm todos os seus dispositivos conectados com maior cobertura de Wi-Fi e desempenho superior.</p>
+
+            <img id="fade-it" class="router-mais-antena" src="img/mais-antena.gif" alt="">
+          </div>
+
+          <div class="layout10">
+            <div class="layout10_cont">
+              <div class="text_layout10">
+                 <h1 style="max-width:460px;" class="titulo_layout2">Poder de processamento Dual Core</h1>
+                  <p class="texto_layout2">Processador Dual Core 1GHz oferece todo o poder de processamento necessário para integrar mais dispositivos e aplicações complexas na rede Wireless. Experimente o que há de melhor em jogos online com execução perfeita e streaming de conteúdo em 4K.</p>
+              </div>
+              
+              <div class="img_layout10">
+                <img src="img/procesador_dual-core.jpg" alt="">
+              </div>
+            </div>
+
+           
+          </div>
+
+          <div class="layout11">
+            <h1 class="titulo_layout" style="max-width:450px; width:100%;">Conexões Inteligentes</h1>
+           
+            
+              <p class="texto_layout" style="padding-bottom:60px;">Muitas opções de conexão ao alcance das mãos. Desfrute mais do que gosta.</p>
+                <div style="max-width: 779px; width: 100%; margin: auto;">
+               <img style="width:100%; display:block;" src="img/conexao1.jpg" alt="">
+                </div>
+          </div>
+
+          <div class="layout11_5">
+            
+            <div style="max-width: 779px; width: 100%; margin: auto; ">
+               <img style="width:100%; display:block;" src="img/conexao2.jpg" alt="">
+            </div>
+            
+          </div>
+
+          <div class="layout12">
+            <div class="layout10_cont">
+              <div class="text_layout10">
+                 <h1 style="max-width:460px;" class="titulo_layout2">DD-WRT Código Aberto</h1>
+                  <p class="texto_layout2">O Roteador Wi-Fi ULTRA AC3200 D-Link (modelo DIR-890L) apresenta uma interface gráfica com boa interação, proporcionando uma experiência excepcional imediata. Os usuários avançados têm a opção de utilizar firmware Open Source para modificar ainda mais as configurações do roteador. O Wi-Fi ULTRA é compatível com a tecnologia DD-WRT OpenSource, sistema operacional baseado em Linux que oferece mais opções de personalização e recursos. Para obter mais informações, visite - <a style="color:#30b3ad;" href="http://www.dd-wrt.com" target="_blank">www.dd-wrt.com</a></p>
+              </div>
+              
+              <div class="img_layout10">
+                <img src="img/dd-wrt.jpg" alt="">
+              </div>
+            </div>
+          
+          </div>
+
+          <div class="layout13">
+            <h1 class="titulo_layout" style="max-width:450px; width:100%;">Jogue online na rede Wi-Fi sem LAG</h1>
+           
+            
+              <p class="texto_layout" style="padding-bottom:60px;">Para quem quer ser um jogador profissional ou apenas curte a plataforma de games online como League of Legends ou gosta de jogar em consoles como Xbox One ou PS4, o roteador ULTRA da D-Link é a melhor solução disponível no mercado.</p>
+              
+            <img id="fly-it" class="joge_router" src="img/joge_router.png" alt="">
+            <img id="scale-itx" class="joge_ps4" src="img/joge_ps4.png" alt="">
+            <img id="fly-it-tres" class="joge_notebook" src="img/joge_notebook.png" alt="">  
+          </div>
+
+          <div class="layout14">
+            
+            <h1 class="titulo_layout" style="max-width:300px; width:100%;">Detalhes tecnológicos </h1>
+            
+            <!--detalle-->
+            <div class="detalle">
+            <div class="img_detalle">
+              <img src="img/detalles1.png" alt="">
+
+            </div>
+
+            <div class="texto_detalle">
+              <h3>Velocidade</h3>
+              <p><span class="detalle_dest">Wi-Fi 11AC</span> – as velocidades de Wi-Fi mais rápidas do Mundo, até 600Mbps (2,4 GHz) + 1300Mbps (5 GHz) + 1300Mbps (5 GHz).
+                  <span class="detalle_dest">Processador de Dual Core 1 GHz</span> – Desempenho rápido e confiável na rede wireless, ethernet e USB.
+                  <span class="detalle_dest">Portas Gigabit Ethernet</span> - A melhor experiência online com fio para streaming em 4K.</p>
+            </div>
+
+            </div>
+
+            <!--detalle-->
+            <div class="detalle">
+            <div class="img_detalle">
+              <img src="img/detalles2.png" alt="">
+
+            </div>
+
+            <div class="texto_detalle">
+              <h3>Cobertura</h3>
+              <p><span class="detalle_dest">Cobertura na casa toda</span> – tecnologias diferenciadas como Advanced Beamforming e SmartConnect garantem o melhor desempenho e área de sinal disponível.
+                  <span class="detalle_dest">Antenas de alta potência</span> – 6 antenas externas amplificam ainda mais o sinal wireless.</p>
+            </div>
+
+            </div>
+
+            <!--detalle-->
+            <div class="detalle">
+            <div class="img_detalle">
+              <img src="img/detalles3.png" alt="">
+
+            </div>
+
+            <div class="texto_detalle">
+              <h3>Desempenho</h3>
+              <p><span class="detalle_dest">Priorização de tráfego</span> – Avançado mecanismo de QoS distribui o tráfego de forma otimizada nas três bandas wireless para garantir o melhor desempenho.
+                <span class="detalle_dest">Tecnologia Tri-Band</span>  – Diminui a interferência e congestionamento na rede wireless, permitindo a conexão com mais dispositivos.
+                <span class="detalle_dest">Direcionamento de Banda</span> – Atribui dispositivos automaticamente para a rede de 5 GHz menos ocupada para aumentar a eficiência e disponibilidade da largura de banda.
+                <span class="detalle_dest">Advanced AC Beamforming</span> – Tecnologia única de conformação de feixes que melhora drasticamente a força e o alcance do sinal wireless.</p>
+            </div>
+
+            </div>
+
+            <!--detalle-->
+            <div class="detalle">
+            <div class="img_detalle">
+              <img src="img/detalles4.png" alt="">
+
+            </div>
+
+            <div class="texto_detalle">
+              <h3>Multimídia</h3>
+              <p><span class="detalle_dest">Habilitado para DLNA (Compatível)</span> – Jogue e compartilhe conteúdos em qualquer dispositivo DLNA, como SmarTVs, consoles de jogos, smartphones e mais.
+                <span class="detalle_dest">Múltiplas portas USB</span> – Uma porta USB 2.0 padrão e uma porta USB 3.0 com velocidades até 10x superiores.
+                <span class="detalle_dest">mydlink SharePort</span>  – Faça streaming e compartilhe de forma remota filmes, música, fotos e muito mais a partir de dispositivo USB conectado. App gratuito.
+                <span class="detalle_dest">Utilitário SharePort</span>  – Acesse e compartilhe uma impressora, scanner ou dispositivo de armazenamento USB na rede da sua casa.</p>
+            </div>
+
+            </div>
+
+            <!--detalle-->
+            <div class="detalle">
+            <div class="img_detalle">
+              <img src="img/detalles5.png" alt="">
+
+            </div>
+
+            <div class="texto_detalle">
+              <h3>Gerenciamento</h3>
+              <p><span class="detalle_dest">Nova interface Web</span> – Qualquer pessoa pode instalar e configurar o roteador com a nova interface de configuração web da D-Link.
+                <span class="detalle_dest">Aplicativo Quick Router Setup (QRS)</span> – Aplicativo para facilitar a configuração em smartphones e tablets.
+                <span class="detalle_dest">Aplicativo mydlink Lite</span> – Aplicativo gratuito para celulares com a capacidade de monitorar, controlar e identificar e solucionar problemas na rede da sua casa.
+                <span class="detalle_dest">WPS Push Button</span> – Método mais rápido para conectar dispositivos ao toque de um botão.
+                <span class="detalle_dest">Zero Configuration</span> – Assim que o roteador estiver configurado, dispositivos habilitados para Zero Configuration da D-Link se conectam na rede instantaneamente, sem nenhuma configuração adicional.</p>
+            </div>
+
+            </div>
+
+            <!--detalle-->
+            <div class="detalle">
+            <div class="img_detalle">
+              <img src="img/detalles6.png" alt="">
+
+            </div>
+
+            <div class="texto_detalle">
+              <h3>Segurança</h3>
+              <p><span class="detalle_dest">VPN L2TP sobre IPSec</span>  – Transmissão de dados com segurança para conexões remotas.
+                <span class="detalle_dest">Controles de pais</span> – Crie cronogramas de acesso online para bloquear/permitir sites e dispositivos específicos. Em outras palavras, controle o que seus filhos vêem na internet.
+                <span class="detalle_dest">Rede de convidados Wi-Fi</span> – Habilite uma rede de hóspedes wireless, pública ou criptografada. Assim, amigos e parentes se conectam em sua rede sem afetar seu desempenho para atividades como downloads ininterruptos.
+                <span class="detalle_dest">Criptografia segura Wi-Fi</span> –WPA/WPA2 proporciona o maior nível possível de segurança na rede wireless. </p>
+            </div>
+
+            </div>
+
+
+
+          </div>
+          <!--/layout14-->
+
+
+          <div class="layout15">
+            <h1 class="titulo_layout" style="max-width:300px; width:100%;">Escolha o seu roteador ULTRA</h1>
+            <div class="escolha">
+            <img src="img/escolha.jpg" alt="">
+            </div>
+
+          </div>
+
+
+        </div>
+ 
+        <div id="tab2" class="tab" style="max-width:780px; width:100%; margin: auto; background-color: rgb(255, 255, 255); padding: 10px;">
+            
+          
+          <div class="desc_left">
+            <h4>Gerais</h4> 
+            <br>   
+            <p>Interfaces do dispositivo</p> 
+            <br><br><br><br>
+            <p>Padrões</p>
+            <br><br><br><br>
+            <p>Requisitos mínimos do sistema</p>
+
+            <br>
+
+            <br><br><br><br>
+            <h4>Funcionalidade</h4>
+            <br>
+            <p>Recursos avançados</p>
+            <br><br><br><br><br><br><br><br><br><br><br><br>
+            <p>Recursos mydlink</p>
+            <br><br><br><br><br><br><br>
+            <p>Suporte a aplicações móveis</p>
+            <br><br><br>
+            <p>Segurança wireless</p>
+            <br><br>
+            <h4>Físico</h4>
+            <br>
+            <p>Dimensões (C x L x A)</p>
+            <br>
+            <p>Peso</p>
+            <br>
+            <p>Alimentação</p>
+            <br><br>
+            <p>Temperatura</p>
+            <br><br>
+            <p>Umidade</p>
+            <br><br>
+            <p>Certificações</p>
+            <br><br><br><br><br>
+            <p>Cores disponíveis</p>
+            <br><br><br>
+            <h4>Informações do pedido</h4>
+            <br>
+            <p>Número da peça </p>
+
+            <p>DIR-890L</p>
+
+              
+          </div>
+
+          <div class="desc_right">    
+            <p>•Wireless LAN 802.11 a/b/g/n/ac</p> 
+
+            <p>• Quatro portas Gigabit LAN 10/100/1000</p>
+        
+            <p>•Porta WAN Gigabit 10/100/1000</p>
+            <p>• Duas portas USB (uma USB 3.0, uma USB 2.0)</p>
+      
+            <br>
+            <p>•IEEE 802.11ac<span>&nbsp&nbsp •IEEE 802.11a</span></p>
+            <p>•IEEE 802.11n<span>&nbsp&nbsp •IEEE 802.3</span></p>
+            <p>•IEEE 802.11g<span>&nbsp&nbsp •IEEE 802.3U</span></p>
+            <p>• IEEE 802.11b</p>
+            
+            <br> 
+            <p>•Windows 8/7/Vista, Mac OS X 10.6 ou superior </p>
+            <p>•Microsoft Internet Explorer 9 ou superior, Firefox 12 ou superior, ou outro navegador habilitado para Java
+</p>  
+            <p>•Interface de rede Ethernet</p>        
+            <p>•Cable ou DSL Modem</p>
+            <p>• Assinatura de um Provedor de Serviços de Internet
+</p>
+            <br>
+            <br>
+
+            <p>•SmartConnect1</p>
+            <p><span>•Firewall ativo duplo</span></p>
+            <p>•Guest Zone</p>
+            <p><span>•Network Address Translation (NAT)</span></p>
+            <p>•Acesso web mydlink™ SharePort </p>
+            <p><span>•Stateful Packet Inspection (SPI) </span></p>
+            <p>•Assistente de configuração web multilíngue </p>
+            <p><span>•VPN Passthrough (PPTP/L2TP/IPsec)</span></p>
+            <p>•Suporte ao servidor de Mídia DLNA</p>
+            <p><span>•QoS avançado</span></p>
+            <p>•SmartBeam AC Avançado</p>
+            <p><span>•QuickVPN - L2TP over IPsec</span></p>
+            <br>
+         
+
+            <p><span>•Gerenciamento remoto </span></p>
+            <p>•Ver largura de banda atual de upload/download</p>
+            <p><span>•Ver clientes atualmente conectados</span></p>
+            <p>•Ver histórico de navegação na web por cliente</p>
+            <p><span>•Bloquear/desbloquear o aceso à rede do cliente</span></p>
+            <p>•Gerenciar detalhes da rede wireless</p>
+            <p><span>•Acessível por meio de um navegador ou aplicativo móvel Android
+</span></p>
+            
+            <br>
+            <p>•mydlink Lite</p>
+
+            <p>•mydlink SharePort</p>
+            <p>•QRS Mobile v1.5</p>
+            <br>
+
+            <p>•WPA & WPA2 (Wi-Fi Protected Access)</p>
+            <p>•Wi-Fi Protected Setup (WPS) PIN/PBC</p>
+
+            <br><br><br>
+            <p>•387 x 247,3 x 119,5 mm (15,23 x 9,73 x 4,7 polegadas)</p>
+
+            <br>
+            <p>•1,00 kg (2,20 libras)</p>
+            <br>
+            <p>•Entrada: 100 a 240 V AC, 50/60 Hz</p>
+            <p>•Saída: 12 V DC, 5 A</p>
+            <br>
+            <p>•Operação: 0 a 40°C (32 a 104°F)</p>
+            <p>•Armazenamento: -20 a 65°C (-4 a 149°F)</p>
+            <br>
+            <p>•Operação: 0% a 90% sem condensação</p>
+            <p>•Armazenamento: 5% a 95% sem condensação</p>
+
+            <br>
+            <p>•Certificação Wi-Fi</p>
+            <p>•Wi-Fi Protected Setup (WPS)</p>
+            <p>•Wi-Fi Multimedia (WMM)</p>
+            <p>•Pronto para IPv6</p>
+            <p>•Compatível com o Windows 8</p>
+            <br>
+
+            <p>Preto / Vermelho</p>
+            <br><br><br><br><br>
+            <p>Descrição</p>
+            <p>Roteador Ultra Wi-Fi AC3200</p>
+          </div>
+        </div>
+ 
+        <div id="tab3" class="tab" style="max-width: 780px; width:100%; margin: auto; background-color: rgb(255, 255, 255); padding: 10px; overflow:hidden;">
+            <p style="text-align: center; color: red; font-size: 15px; padding-top:32px;">Eventuais defeitos decorrentes de atualização de firmware feita sem acompanhamento
+              do suporte <br>D-Link não serão cobertos pela garantia do produto.</p>
+            
+            <div class="descarga">
+              <div class="descarga_left">
+              <p>Datasheet</p>
+              <br>
+              <p>Imagem</p>
+
+            </div>
+              
+              <div class="descarga_right">
+                
+                  <a href="http://www.cuartoapps.com/dLink/landing-descargas/Datasheet_DIR-890L.pdf" target="_blank">
+                    <img src="img/pdficon.png" alt="" title="application/pdf"><p> Datasheet DIR-890L</p>
+                  </a>
+                  <br>
+                  <a href="http://www.cuartoapps.com/dLink/landing-descargas/slider1.jpg" target="_blank">
+                    <img style="width: 15px;" src="img/imgicon.png" alt="" download="imgicon.png"><p> DIR-890L(A)</p>
+                  </a>
+                  <a href="http://www.cuartoapps.com/dLink/landing-descargas/slider2.jpg" target="_blank">
+                    <img style="width: 15px;" src="img/imgicon.png" alt="" ><p>  DIR-890L(B)</p>
+                  </a>
+                  <a href="http://www.cuartoapps.com/dLink/landing-descargas/slider3.jpg" target="_blank">
+                    <img style="width: 15px;" src="img/imgicon.png" alt="" ><p>  DIR-890L(C)</p>
+                  </a>  
+                  <a href="http://www.cuartoapps.com/dLink/landing-descargas/slider4.jpg" target="_blank">
+                    <img style="width: 15px;" src="img/imgicon.png" alt="" ><p>  DIR-890L(D)</p>
+                  </a> 
+                  <a href="http://www.cuartoapps.com/dLink/landing-descargas/slider5.jpg" target="_blank">
+                    <img style="width: 15px;" src="img/imgicon.png" alt="" ><p>  DIR-890L(E)</p>
+                  </a>      
+                  
+                                             
+              </div>
+              
+            </div>             
+  
+        </div>
+
+        <div id="tab4" class="tab" style="width: 780px; margin: auto; background-color: rgb(255, 255, 255); padding: 10px;">
+                 
+        </div>
+ 
+        
+    </div>
+</div>  
+</div>
+
+</div>
+
+<script type="text/javascript" src="js/TweenMax.min.js"></script>
+  
+    <script>window.jQuery || document.write('<script src="_/js/jquery-1.9.1.min.js"><\/script>')</script>
+    <script src="js/jquery.superscrollorama.js"></script>
+  <script>
+    $(document).ready(function() {
+      var controller = $.superscrollorama();
+      // individual element tween examples
+      controller.addTween('#fade-it', TweenMax.from( $('#fade-it'), .5, {css:{opacity: 0}}));
+      controller.addTween('#fade-itx', TweenMax.from( $('#fade-itx'), .5, {css:{opacity: 0}}));
+      controller.addTween('#fly-it', TweenMax.from( $('#fly-it'), .5, {css:{left:'2000px'}, ease:Quad.easeInOut}));
+      controller.addTween('#fly-it-dos', TweenMax.from( $('#fly-it-dos'), .25, {css:{left:'2000px'}, ease:Quad.easeInOut}));
+      controller.addTween('#fly-it-tres', TweenMax.from( $('#fly-it-tres'), .25, {css:{right:'2000px'}, ease:Quad.easeInOut}));
+      controller.addTween('#fly-itx', TweenMax.from( $('#fly-itx'), .5, {css:{left:'2000px'}, ease:Quad.easeInOut}));
+      controller.addTween('#spin-it', TweenMax.from( $('#spin-it'), .25, {css:{opacity:0, rotation: 720}, ease:Quad.easeOut}));
+      controller.addTween('#scale-it', TweenMax.fromTo( $('#scale-it'), .5, {css:{opacity:0, width:'300px'}, immediateRender:true, ease:Quad.easeInOut}, {css:{opacity:1, width:'100%'}, ease:Quad.easeInOut}));
+      controller.addTween('#scale-itx', TweenMax.fromTo( $('#scale-itx'), .5, {css:{opacity:0, width:'100px'}, immediateRender:true, ease:Quad.easeInOut}, {css:{opacity:1, width:'202px'}, ease:Quad.easeInOut}));
+      controller.addTween('#scale-itxdos', TweenMax.fromTo( $('#scale-itxdos'), .5, {css:{opacity:0, width:'100px'}, immediateRender:true, ease:Quad.easeInOut}, {css:{opacity:1, width:'100%'}, ease:Quad.easeInOut}));
+      controller.addTween('#smush-it', TweenMax.fromTo( $('#smush-it'), .25, {css:{opacity:0, 'letter-spacing':'30px'}, immediateRender:true, ease:Quad.easeInOut}, {css:{opacity:1, 'letter-spacing':'-10px'}, ease:Quad.easeInOut}), 0, 100); // 100 px offset for better timing
+    });
+  </script>
+
+</body>
+</html>
